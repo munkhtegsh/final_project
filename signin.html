@@ -15,7 +15,6 @@
 
 <body>
   <header>
-
     <div class="logo"> <a href="final-site-plan.html" class="logo">
         <img src="images-final/store-logo.png" alt="family store logo">
       </a></div>
@@ -24,7 +23,7 @@
     <div class="nav-menu">
       <button class="dropbtn">Menu</button>
       <div class="menu-content">
-        <a href="final-site-plan.html"> Home  </a>
+        <a href="final-site-plan.html"> Home </a>
         <a href="#"> Women </a>
         <a href="#"> Men </a>
         <a href="#"> Kids </a>
@@ -33,124 +32,86 @@
         <a href="aboutus.html"> About Us </a>
       </div>
     </div>
-
   </header>
   <main>
     <div class="topnav">
-      <form class="example" action="action_page.php">
-        <label for="search"></label>
-        <input type="text" placeholder="Search .." name="search" id="search">
-        <button type="submit" name="search-icon"><i class="fa fa-search"></i>Search</button>
-      </form>
+      <div class="icon_container">
+        <img class="icon" src="./images-final/profile_icon.png" />
+        <img class="icon" src="./images-final/cart_icon.jpg" />
+      </div>
+      <div class="search_container">
+        <input class="search" type="text" placeholder="Search .." name="search" id="search">
+      </div>
     </div>
-<div class="signin-container">
-    <h3>Sign-In</h3>
-      <form action="/action_page.php">
-        <div class="row">
-          <div class="col-25">
-            <label for="signemail"></label>
+    <div class="main">
+      <div class="side-container vertical-style">
+        <section class="section-container">
+          <h3>Sign-In</h3>
+          <form action="/action_page.php">
+            <input class="row form-input" type="email" id="signemail" name="email" placeholder="E-Mail..">
+            <div class="row">
+              <input class="form-input" type="password" id="password" name="lastname" placeholder="Password..">
+            </div>
+            <input class="row form-input " type="submit" value="SIGN In">
+          </form>
+          <a href="forgetpassword.html">Forgot Your Password?</a>
+          <h2>OR</h2>
+
+          <div class="login-container">
+            <input type="button" class="row form-input" value="Sign-In with Gmailn">
+            <input type="button" class="row form-input" value="Sign-In with Facebook">
           </div>
-          <div class="col-75">
-            <input type="email" id="signemail" name="email" placeholder="E-Mail..">
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-25">
-            <label for="password"></label>
-          </div>
-          <div class="col-75">
-            <input type="password" id="password" name="lastname" placeholder="Password..">
-          </div>
-        </div>
-        <div class="row">
-          <input type="submit" value="SIGN In">
-        </div>
-        </form>
-        <a href="forgetpassword.html">Forgot Your Password?</a>
-       <h2>OR</h2>
-        <form action="/action_page.php">
-        <div class="row">
-          <div class="col-25">
-            <label for="signwithgmail"></label>
-          </div>
-          <div class="col-75">
-            <input type="button" class="signwithgmail" value="Sign-In with Gmailn">
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-25">
-            <label for="signwithfacebook"></label>
-          </div>
-          <div class="col-75">
-            <input type="button" class="signwithfacebook" value="Sign-In with Facebook">
-          </div>
-        </div> 
-        <div class="register-container">
-    <h3>Register</h3>
-      <form action="/action_page.php">
-        <div class="row">
-          <div class="col-25">
-            <label for="signemail"></label>
-          </div>
-          <div class="col-75">
-            <input type="email" id="signemail" name="email" placeholder="E-Mail..">
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-25">
-            <label for="password"></label>
-          </div>
-          <div class="col-75">
-            <input type="password" id="password" name="lastname" placeholder="Password..">
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-25">
-            <label for="confirmpassword"></label>
-          </div>
-          <div class="col-75">
-            <input type="password" id="confirmpassword" name="lastname" placeholder="Confirm Password..">
-          </div>
-        </div>
-        <h4>Style preference</h4>
-        <label class="preference">Women
-  <input type="checkbox" checked="checked">
-  <span class="checkmark"></span>
-</label>
-<label class="preference">Men
-  <input type="checkbox" checked="checked">
-  <span class="checkmark"></span>
-</label>
-<label class="preference">Kids
-  <input type="checkbox" checked="checked">
-  <span class="checkmark"></span>
-</label>
-<label class="preference">Home
-  <input type="checkbox" checked="checked">
-  <span class="checkmark"></span>
-</label>
-<label class="preference">Other
-  <input type="checkbox" checked="checked">
-  <span class="checkmark"></span>
-</label>
-        <div class="row">
-          <input type="submit" value="Register">
-        </div>
-        </form>
-        </div>
-        <section>
+        </section>
+      </div>
+      <div class="side-container">
+        <section class="section-container">
+          <h3>Register</h3>
+          <form action="/action_page.php">
+            <input class="row form-input" type="email" id="signemail" name="email" placeholder="E-Mail..">
+            <input class="row form-input" type="password" id="password" name="lastname" placeholder="Password..">
+            <input class="row form-input" type="password" id="confirmpassword" name="lastname"
+              placeholder="Confirm Password..">
+            <h4>Style preference</h4>
+            <div class="options">
+              <label class="preference">Women
+                <input type="checkbox" checked="checked">
+                <span class="checkmark"></span>
+              </label>
+              <label class="preference">Men
+                <input type="checkbox" checked="checked">
+                <span class="checkmark"></span>
+              </label>
+              <label class="preference">Kids
+                <input type="checkbox" checked="checked">
+                <span class="checkmark"></span>
+              </label>
+              <label class="preference">Home
+                <input type="checkbox" checked="checked">
+                <span class="checkmark"></span>
+              </label>
+              <label class="preference">Other
+                <input type="checkbox" checked="checked">
+                <span class="checkmark"></span>
+              </label>
+            </div>
+            <input class="row form-input" type="submit" value="Register">
+          </form>
+        </section>
+      </div>
+    </div>
+    <section>
       <div class="google-ad">
-            <img src="images-final/ad-banner.jpg" alt="advertising">
-        </div>
-    </section> 
-    </main>
+        <img src="images-final/ad-banner.jpg" alt="advertising">
+      </div>
+    </section>
+  </main>
   </header>
   <footer>
     <ul class="contact-info">
       <li>📍 Family Store<br>
         Саруул хороолол 118- р байр<br>
-            ( Баянмонгол хорооллын баруун талд)<br>
-            Ulaanbaatar, Mongolia 11-976</li>
+        ( Баянмонгол хорооллын баруун талд)<br>
+        Ulaanbaatar, Mongolia 11-976</li>
       <li>☎ 9999-12783</li>
       <li>📧 contactfamily@gmail.com</li>
     </ul>
@@ -161,9 +122,9 @@
         <li><a href="http://Instagram.com"><img src="images-final/insta-icon.png" alt="Instagram icon"></a></li>
       </ul>
     </div>
-      <div class="mappic">
-        <img src="images-final/footer-map.jpg" alt="map picture of store location">
-      </div>
+    <div class="mappic">
+      <img src="images-final/footer-map.jpg" alt="map picture of store location">
+    </div>
     <div class="copyright">
       <p class="copyright"> &copy; 2020 Family Store | All Rights Reserved | <a class="terms" href="#"> Privacy &amp;
           Cookie Statement</a> | Altanbayar Purevtogtokh</p>
